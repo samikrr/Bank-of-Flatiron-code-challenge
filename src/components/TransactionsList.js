@@ -6,7 +6,7 @@ import Transaction from "./Transaction";
 function TransactionsList({ transactions, newDeleteTransaction }) {
 
   const deleteTransaction = (transactionId) => {
-    fetch('http://localhost:8001/transactions/' + transactionId, {
+    fetch('https://bank-of-flatiron-code-challenge-slh1.onrender.com/transactions' + transactionId, {
       method: "DELETE"
     })
     newDeleteTransaction(transactionId);
